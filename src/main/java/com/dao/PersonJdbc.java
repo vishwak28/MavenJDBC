@@ -30,7 +30,7 @@ public class PersonJdbc {
 		public int saveData(String fname,String lname){
 			try {
 				con=myConnection();
-				ps=con.prepareStatement("insert into person values(?,?)");
+				ps=con.prepareStatement("insert into person1 values(?,?)");
 				ps.setString(1,fname);
 				ps.setString(2,lname);
 				i = ps.executeUpdate();
